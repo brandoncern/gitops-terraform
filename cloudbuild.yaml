@@ -1,5 +1,5 @@
 # In this directory, run the following command to build this builder.
-# $ gcloud builds submit . --config=cloudbuild.yaml ffffdssds
+# $ gcloud builds submit . --config=cloudbuild.yaml
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '--tag=gcr.io/$cloud-init-248919/terraform', '.']
