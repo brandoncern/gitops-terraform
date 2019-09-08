@@ -2,8 +2,8 @@
 # $ gcloud builds submit . --config=cloudbuild.yaml ffffdssds
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--tag=gcr.io/${PROJECT_ID}/terraform', '.']
-- name: 'gcr.io/${PROJECT_ID}/terraform'
+  args: ['build', '--tag=gcr.io/$cloud-init-248919/terraform', '.']
+- name: 'gcr.io/cloud-init-248919/terraform'
   args: ['version']
-images: ['gcr.io/${PROJECT_ID}/terraform']
+images: ['gcr.io/cloud-init-248919/terraform']
 tags: ['cloud-builders-community']
